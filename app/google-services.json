@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "841507466765",
+    "firebase_url": "https://interiordeco-32ef9.firebaseio.com",
+    "project_id": "interiordeco-32ef9",
+    "storage_bucket": "interiordeco-32ef9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841507466765:android:3cc1219e31dd8257",
+        "android_client_info": {
+          "package_name": "com.example.tino.interiordecoration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841507466765-vjd8i9tlp0o1ff1c6ua3jb3b77d9bgi3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tino.interiordecoration",
+            "certificate_hash": "ec3ea60c7df7ca44186cf10cab56b09f38b2f182"
+          }
+        },
+        {
+          "client_id": "841507466765-9o4c5k7kk60j0r60gt0l1ltlmpteb38q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBS7mfGy7C-ovV4OZ5rAle9WKhqSvpHi8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841507466765-9o4c5k7kk60j0r60gt0l1ltlmpteb38q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841507466765:android:89224b8016975571",
+        "android_client_info": {
+          "package_name": "tino.example.tino.interiordecoration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841507466765-577sao9gc1alsvv2eo8bo3l9n4hvghf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tino.example.tino.interiordecoration",
+            "certificate_hash": "ec3ea60c7df7ca44186cf10cab56b09f38b2f182"
+          }
+        },
+        {
+          "client_id": "841507466765-9o4c5k7kk60j0r60gt0l1ltlmpteb38q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBS7mfGy7C-ovV4OZ5rAle9WKhqSvpHi8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841507466765-9o4c5k7kk60j0r60gt0l1ltlmpteb38q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadRequestActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/request_contstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/request_list_view"
+        android:background="@drawable/customborder"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/request_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            tools:text="Name Name"/>
+
+        <TextView
+            android:id="@+id/time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/request_name_textview"
+            app:layout_constraintBottom_toBottomOf="@id/request_name_textview"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="8dp"
+            tools:text="24.05.2018"/>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/request_name_textview"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="#000000"/>
+
+        <TextView
+            android:id="@+id/rooms_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Rooms: "
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/line1"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/rooms_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/rooms_textview"
+            app:layout_constraintTop_toTopOf="@id/rooms_textview"
+            app:layout_constraintBottom_toBottomOf="@id/rooms_textview"/>
+
+        <TextView
+            android:id="@+id/budget_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:text="Budget: "
+            app:layout_constraintTop_toBottomOf="@id/rooms_textview"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/budget_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="$3000"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/budget_textview"
+            app:layout_constraintTop_toTopOf="@id/budget_textview"
+            app:layout_constraintBottom_toBottomOf="@id/budget_textview"/>
+
+        <TextView
+            android:id="@+id/area_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:text="Area: "
+            app:layout_constraintTop_toBottomOf="@id/budget_textview"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/area_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="100 square meters"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/area_textview"
+            app:layout_constraintTop_toTopOf="@id/area_textview"
+            app:layout_constraintBottom_toBottomOf="@id/area_textview"/>
+
+        <ImageView
+            android:id="@+id/request_imageview1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/area_textview"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:id="@+id/request_imageview2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/area_textview"
+            app:layout_constraintLeft_toRightOf="@id/request_imageview1"/>
+
+        <ImageView
+            android:id="@+id/request_imageview3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toBottomOf="@id/area_textview"
+            app:layout_constraintLeft_toRightOf="@id/request_imageview2" />
+
+        <ImageView
+            android:id="@+id/request_imageview4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toBottomOf="@id/area_textview"
+            app:layout_constraintLeft_toRightOf="@id/request_imageview3"/>
+
+
+        <ImageView
+            android:id="@+id/request_imageview5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toBottomOf="@id/area_textview"
+            app:layout_constraintLeft_toRightOf="@id/request_imageview4"/>
+
+        <TextView
+            android:id="@+id/request_content_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/request_imageview1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Message message message message message message message "/>
+    </android.support.constraint.ConstraintLayout>
+
+    <tino.example.tino.interiordecoration.MyListView
+        android:id="@+id/request_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/request_contstraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/compose_request_message_layout"
+        android:divider="@color/browser_actions_divider_color">
+    </tino.example.tino.interiordecoration.MyListView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/compose_request_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/request_list_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        
+        <EditText
+            android:id="@+id/write_request_message_edittext"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/send_button"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Send message"
+            app:layout_constraintTop_toBottomOf="@id/send_image_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/write_request_message_edittext"/>
+
+        <Button
+            android:id="@+id/send_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Send Image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/send_button"
+            app:layout_constraintRight_toRightOf="parent"/>
+        
+    </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
